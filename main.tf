@@ -29,7 +29,7 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_security_group" "web" {
+resource "aws_security_group" "blog" {
   name        = "blog"
   description = "blog aws_security_group"
   vpc_id      = data.aws_vpc.default.id
